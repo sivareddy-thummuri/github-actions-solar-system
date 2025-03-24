@@ -32,6 +32,7 @@ jobs:
           run: npm test
 
         - name: Archive Test Results
+          continue-on-error: true
           uses: actions/upload-artifact@v4
           with:
             name: Unit Testing Artifacts
